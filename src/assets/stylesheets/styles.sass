@@ -1,0 +1,59 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+/*
+ Table of Contents
+ --------------------------------------------------
+ 1. Functions (Mixins, Each, font-sizing headers)
+ 2. Default
+/*
+
+/*
+  1. Functions
+  -------------------------------------------------------------------------------- */
+@mixin font-setting($family: 'Inter', $weight: 400, $size: 16px, $line-height: 1.5)
+  font-family: $family, sans-serif
+  font-weight: $weight
+  font-size: $size
+  line-height: $line-height
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+$font-sizes: (h1: (base: 1.5rem, scale: 2.5vw),h2: (base: 1.25rem, scale: 2vw),h3: (base: 1rem, scale: 1.5vw),h4: (base: 0.875rem, scale: 1vw))
+
+@each $header, $sizes in $font-sizes
+  #{$header}
+    letter-spacing: 0.05em
+    @include font-setting('Roboto', 700, calc(map-get($sizes, base) + map-get($sizes, scale)), 1.2)
+
+/*
+  1. Default
+  -------------------------------------------------------------------------------- */
+::-webkit-scrollbar
+  @apply w-2
+::-webkit-scrollbar-track
+  @apply bg-light-tertiary
+::-webkit-scrollbar-thumb
+  @apply bg-tertiary cursor-pointer rounded my-1
+::-webkit-scrollbar-thumb:hover
+  @apply bg-secondary
+
+html,
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  @apply bg-light-secondary transition-colors duration-300 ease-in-out
+
+a,
+i,
+li,
+button
+  text-decoration: none
+  list-style: none
+  cursor: pointer
+  @apply text-dark
+
+.material-symbols-outlined
+  font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24

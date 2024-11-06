@@ -20,5 +20,6 @@ The purpose of this landing page is to promote a wide range of handcrafted furni
 To run the project locally:
 
 1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
+```bash
+https://github.com/thealexcesar/style-house-design.git
+```

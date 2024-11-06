@@ -1,27 +1,24 @@
-# Styleshousedesigns
+# style-house-design
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+Landing page focused on showcasing handcrafted home decor and furniture, including custom tables, rustic clocks, and other beautifully crafted items. The website aims to attract potential leads by offering SEO-optimized content, allowing customers to discover unique, artisanal home design pieces.
 
-## Development server
+## Objective
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The purpose of this landing page is to promote a wide range of handcrafted furniture and home decor items. By providing an immersive experience showcasing high-quality and rustic designs, **style-house-design** seeks to engage users, boost lead generation, and drive sales of personalized and artisanal home decor products.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Application**: [Angular](https://angular.dev/overview)
+- **Container**: [Docker](https://docs.docker.com/)
+- **Styles**: [Tailwind CSS](https://tailwindcss.com/docs/installation), [Angular Material](https://material.angular.io/)
+- **Icons**: [Google Material Icons](https://fonts.google.com/icons)
 
-## Build
+[//]: # (- **SEO Optimization**: Tailored meta tags, content structuring, and dynamic title management for better visibility on search engines.)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Setup Instructions
 
-## Running unit tests
+To run the project locally:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>

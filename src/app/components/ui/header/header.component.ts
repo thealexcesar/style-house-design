@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {RouterLink} from '@angular/router';
 import {NavbarComponent} from '@components/ui/navbar/navbar.component';
 import {EventListenerDirective} from '@directives/event-listener.directive';
+import {TranslatePipe} from '@ngx-translate/core';
+import {LanguageComponent} from '@components/ui/language/language.component';
 
 @Component({
   selector: 'shd-header',
@@ -9,7 +11,9 @@ import {EventListenerDirective} from '@directives/event-listener.directive';
   imports: [
     RouterLink,
     NavbarComponent,
-    EventListenerDirective
+    EventListenerDirective,
+    TranslatePipe,
+    LanguageComponent
   ],
   templateUrl: './header.component.html',
   styles: ``

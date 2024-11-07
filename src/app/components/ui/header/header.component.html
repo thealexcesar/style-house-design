@@ -1,22 +1,28 @@
-<header class="fixed top-0 w-full bg-light z-50">
-  <div class="container-responsive py-4 h-12 flex justify-between items-center">
+<header class="fixed top-0 w-full bg-light z-50 h-10">
+  <div class="my-auto h-full container-responsive flex justify-between items-center">
     <a
       [routerLink]="['']"
-      class="text-lg font-semibold hover:no-underline"
+      (click)="closeMenu()"
+      class="hover:no-underline"
     >
       <i class="material-symbols-outlined">home</i>
     </a>
 
     <div class="flex items-center gap-4">
+      <shd-language title="{{ 'translate' | translate }}" />
       <button
         (click)="toggleMenu()"
         (keydown.enter)="toggleMenu()"
         (keydown.escape)="closeMenu()"
         tabindex="0"
         class="md:hidden cursor-pointer"
-        shdEventListener
       >
-        <i class="material-symbols-outlined">{{ isOpen ? 'close' : 'menu' }}</i>
+        <i
+          class="material-symbols-outlined transition-transform duration-300 ease-in-out"
+          [class.rotate-180]="isOpen"
+        >
+          {{ isOpen ? 'close' : 'menu' }}
+        </i>
       </button>
     </div>
   </div>

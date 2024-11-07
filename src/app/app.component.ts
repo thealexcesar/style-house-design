@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {ProductComponent} from './components/product/product.component';
+import {ProductComponent} from '@components/product/product.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'shd-root',
   standalone: true,
   imports: [
     ProductComponent,
     RouterOutlet
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'styles house design';

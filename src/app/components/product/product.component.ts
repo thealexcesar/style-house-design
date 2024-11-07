@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-product',
+  selector: 'shd-product',
   standalone: true,
   imports: [],
   templateUrl: './product.component.html',

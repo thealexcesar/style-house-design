@@ -45,7 +45,7 @@ body
   margin: 0
   padding: 0
   box-sizing: border-box
-  @apply bg-light-secondary transition-colors duration-300 ease-in-out
+  @apply bg-light-secondary transition duration-300 ease-in-out
 
 a,
 i,
@@ -56,5 +56,14 @@ button
   cursor: pointer
   @apply text-dark
 
+  &:hover
+    @apply text-highlight
+
 .material-symbols-outlined
   font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24
+
+.container-responsive
+  @apply max-w-screen-xl mx-auto px-4 w-full
+
+.navbar-link
+  @apply flex items-center gap-8 p-2 mt-4 bg-light hover:bg-light-tertiary rounded-lg

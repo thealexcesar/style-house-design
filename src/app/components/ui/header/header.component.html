@@ -1,0 +1,25 @@
+<header class="fixed top-0 w-full bg-light z-50">
+  <div class="container-responsive py-4 h-12 flex justify-between items-center">
+    <a
+      [routerLink]="['']"
+      class="text-lg font-semibold hover:no-underline"
+    >
+      <i class="material-symbols-outlined">home</i>
+    </a>
+
+    <div class="flex items-center gap-4">
+      <button
+        (click)="toggleMenu()"
+        (keydown.enter)="toggleMenu()"
+        (keydown.escape)="closeMenu()"
+        tabindex="0"
+        class="md:hidden cursor-pointer"
+        shdEventListener
+      >
+        <i class="material-symbols-outlined">{{ isOpen ? 'close' : 'menu' }}</i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<shd-navbar [isOpen]="isOpen" class="bg-light" />

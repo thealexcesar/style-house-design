@@ -1,0 +1,42 @@
+<nav
+  class="fixed top-12 left-0 w-full h-[calc(100%-3rem)] bg-light shadow-lg transition-transform duration-500 ease-in-out z-40"
+  [ngClass]="{ 'translate-y-0': isOpen, '-translate-y-full': !isOpen }"
+  shdEventListener
+  (clickOutside)="closeMenu()"
+>
+  <div class="px-4 bg-light">
+
+    <ul class="text-secondary dark:text-secondary-light">
+      <li>
+        <a routerLink="/" class="navbar-link" tabindex="0">
+          <i class="material-symbols-outlined">topic</i>
+          <span>Topics</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/" class="navbar-link" tabindex="0">
+          <i class="material-symbols-outlined">chat_bubble</i>
+          <span>Messages</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/" class="navbar-link" tabindex="0">
+          <i class="material-symbols-outlined">mail</i>
+          <span>Notifications</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/" class="navbar-link" tabindex="0">
+          <i class="material-symbols-outlined">contact_page</i>
+          <span>Contact</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/" class="navbar-link" tabindex="0">
+          <i class="material-symbols-outlined">live_help</i>
+          <span>Help</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

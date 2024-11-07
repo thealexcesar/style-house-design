@@ -1,0 +1,40 @@
+about_us: 'Sobre nós'
+actions:
+  create: 'Criar %s'
+  delete: 'Deletar %s'
+  edit: 'Editar %s'
+all_rights_reserved: 'Todos os direitos reservados'
+connect_with_us: 'Conecte-se conosco'
+close: 'Fechar'
+dark: 'Escuro'
+languages:
+  en: 'Inglês'
+  pt: 'Português'
+light: 'Claro'
+messages:
+  error: 'Erro ao %s %s.'
+  success: '%s %s com sucesso.'
+models:
+  product:
+    one: 'Produto'
+    plural: 'Procdutos'
+  deal:
+    one: 'Oferta'
+    plural: 'Ofertas'
+more: 'Mais'
+not_found: 'Nenhum %s encontrado'
+placeholder:
+  search: 'Pesquisar'
+price_range: 'Faixa de preço'
+profile: 'Perfil'
+show: 'Mostrar'
+sign:
+  in: 'Entrar'
+  out: 'Sair'
+support:
+  title: 'Suporte'
+  faqs: 'Perguntas Frequentes'
+  help_and: 'Ajuda e suporte'
+  terms_of_service: 'Termos de serviço'
+  privacy_policy: 'Política de privacidade'
+translate: 'Traduzir'

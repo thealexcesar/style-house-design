@@ -1,7 +1,9 @@
+@use '@angular/material' as mat
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')
 @tailwind base
 @tailwind components
 @tailwind utilities
+@include mat.core()
 
 /*
  Table of Contents
@@ -66,4 +68,19 @@ button
   @apply max-w-screen-xl mx-auto px-4 w-full
 
 .navbar-link
-  @apply flex items-center gap-8 p-2 mt-4 bg-light hover:bg-light-tertiary rounded-lg
+  @apply flex items-center gap-8 py-2 px-4 bg-light hover:bg-light-tertiary
+
+
+.mat-mdc-menu-content
+  border-radius: 2px
+  @apply mt-1 border border-dark bg-light text-dark
+  .mat-mdc-menu-item-text
+    padding: 4px 8px
+    &:hover, &:focus
+      @apply bg-light-tertiary outline-none
+
+
+$styleshousedesigns-theme: mat.define-theme((color: (theme-type: light,primary: mat.$azure-palette,tertiary: mat.$blue-palette,),density: (scale: 0,)))
+:root
+  @include mat.all-component-themes($styleshousedesigns-theme)
+

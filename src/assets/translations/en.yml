@@ -1,0 +1,40 @@
+about_us: 'About Us'
+actions:
+  create: 'Create %s'
+  delete: 'Delete %s'
+  edit: 'Edit %s'
+all_rights_reserved: 'All rights reserved'
+connect_with_us: 'Connect with us'
+close: 'Close'
+dark: 'Dark'
+languages:
+  en: 'English'
+  pt: 'Portuguese'
+light: 'Light'
+messages:
+  error: 'Error %s %s.'
+  success: '%s %s successfully.'
+models:
+  product:
+    one: 'Product'
+    plural: 'Products'
+  deal:
+    one: 'Deal'
+    plural: 'Deals'
+more: 'More'
+not_found: 'No %s found'
+placeholder:
+  search: 'Search'
+price_range: 'Price Range'
+profile: 'Profile'
+show: 'Show'
+sign:
+  in: 'Sign In'
+  out: 'Sign Out'
+support:
+  title: 'Support'
+  faqs: 'FAQs'
+  help_and: 'Help and Support'
+  terms_of_service: 'Terms of Service'
+  privacy_policy: 'Privacy Policy'
+translate: 'Translate'

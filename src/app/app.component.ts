@@ -13,7 +13,7 @@ import {FooterComponent} from '@components/ui/footer/footer.component';
   ],
   template: `
     <div class="flex flex-col min-h-screen">
-      <shd-header class="bg-light"/>
+      <shd-header class="flex items-center" />
       <main class="flex-grow bg-light-secondary">
         <div class="container-responsive py-12 overflow-hidden">
           <!-- TODO: add components inner main -->

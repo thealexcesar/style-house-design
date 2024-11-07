@@ -18,9 +18,9 @@ export class YamlTranslateHttpLoader implements TranslateLoader {
     @Inject(SUFFIX) private suffix: string
   ) {}
 
-  public getTranslation(lang: string): Observable<Record<string, any>> {
+  public getTranslation(lang: string): Observable<Record<string, string>> {
     return this.http.get(`${this.prefix}${lang}${this.suffix}`, { responseType: 'text' }).pipe(
-      map((response: string) => parse(response) as Record<string, any>)
+      map((response: string) => parse(response) as Record<string, string>)
     );
   }
 }

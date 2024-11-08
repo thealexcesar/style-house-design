@@ -1,46 +1,27 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {LanguageService} from "@services/language.service";
-import {KeyValuePipe, NgForOf, NgOptimizedImage} from "@angular/common";
+import {KeyValuePipe} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
-import {MatMenu, MatMenuItem, MatMenuTrigger} from '@angular/material/menu';
 import {ItemsMap} from '@services/types/items-map.service';
+import {DropdownComponent} from '@components/ui/dropdown/dropdown.component';
 
 @Component({
   selector: 'shd-language',
   standalone: true,
-  imports: [
-    MatMenu,
-    MatMenuItem,
-    KeyValuePipe,
-    MatMenuTrigger,
-    NgOptimizedImage,
-    TranslateModule,
-    NgForOf
-  ],
+  imports: [DropdownComponent, KeyValuePipe, TranslateModule],
   template: `
-    <mat-menu #languageMenu="matMenu">
-      <button mat-menu-item *ngFor="let lang of languages | keyvalue" (click)="switchLang(lang.key)">
-        {{ lang.value | translate }}
-      </button>
-    </mat-menu>
-
-    <i
-      mat-button
-      [matMenuTriggerFor]="languageMenu"
-      aria-label="Language Menu"
-      class="material-symbols-outlined open-dropdown"
-      tabindex="0"
-      (keyup)="handleKeyboardEvent($event)"
+    <shd-dropdown
+      [items]="dropdownItems"
+      (itemSelected)="switchLang($event)"
     >
-      language
-    </i>
+      <i class="material-symbols-outlined open-dropdown" aria-label="Language Menu" tabindex="0">language</i>
+    </shd-dropdown>
   `,
-  styles: ``
 })
 export class LanguageComponent implements OnInit {
   currentLang: string;
-  dropdownOpen = false;
   languages!: ItemsMap;
+  dropdownItems: { key: string; label: string }[] = [];
 
   constructor(private languageService: LanguageService) {
     this.currentLang = this.languageService.initializeLanguageSettings();
@@ -48,31 +29,15 @@ export class LanguageComponent implements OnInit {
 
   ngOnInit(): void {
     this.languages = this.languageService.getAvailableLanguages();
+    this.dropdownItems = Object.keys(this.languages).map((key) => ({
+      key,
+      label: this.languages[key]
+    }));
     this.languageService.switchLang(this.currentLang);
   }
 
   switchLang(lang: string): void {
-    if (lang) {
-      this.languageService.switchLang(lang);
-      this.currentLang = lang;
-    }
-  }
-
-  handleKeyboardEvent(event: KeyboardEvent): void {
-    if (event.key === 'Enter' || event.key === ' ') {
-      (event.target as HTMLElement).click();
-    }
-  }
-
-  @HostListener('document:click', ['$event'])
-  onClick(event: Event): void {
-    const targetElement = event.target as HTMLElement;
-    if (!targetElement.closest('.relative') && this.dropdownOpen) {
-      this.closeDropdown();
-    }
-  }
-
-  private closeDropdown(): void {
-    this.dropdownOpen = false;
+    this.languageService.switchLang(lang);
+    this.currentLang = lang;
   }
 }

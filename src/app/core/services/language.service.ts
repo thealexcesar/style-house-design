@@ -7,7 +7,7 @@ import {DOCUMENT, isPlatformBrowser} from '@angular/common';
   providedIn: 'root'
 })
 export class LanguageService {
-  currentLang: string;
+  protected currentLang: string;
   private readonly defaultLang = 'pt';
   private readonly langLocalStorageKey = 'lang';
   private languages: ItemsMap = {
@@ -19,9 +19,7 @@ export class LanguageService {
     private translate: TranslateService,
     @Inject(PLATFORM_ID) private platformId: object,
     @Inject(DOCUMENT) private document: Document
-  ) {
-    this.currentLang = this.initializeLanguageSettings();
-  }
+  ) {this.currentLang = this.initializeLanguageSettings()}
 
   initializeLanguageSettings(): string {
     let savedLang: string | null = null;

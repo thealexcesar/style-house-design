@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {LanguageService} from "@services/language.service";
 import {KeyValuePipe} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";

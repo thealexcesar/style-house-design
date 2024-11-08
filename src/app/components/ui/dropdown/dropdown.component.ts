@@ -9,12 +9,13 @@ import {EventListenerDirective} from '@directives/event-listener.directive';
   imports: [NgForOf, NgIf, TranslatePipe, EventListenerDirective],
   template: `
     <div class="relative" shdEventListener (clickOutside)="closeDropdown()" (escapeKey)="closeDropdown()">
-      <button (click)="toggleDropdown()" tabindex="-1">
+      <button (click)="toggleDropdown()" (keydown.enter)="toggleDropdown()" (keydown.space)="toggleDropdown()" tabindex="0">
         <ng-content></ng-content>
       </button>
 
       <ul *ngIf="dropdownOpen" class="absolute right-0 w-48 bg-light border border-dark shadow-md py-2">
-        <li *ngFor="let item of items" (click)="selectItem(item)"
+        <li *ngFor="let item of items" (click)="selectItem(item)" (keydown.enter)="selectItem(item)"
+            (keydown.space)="selectItem(item)" tabindex="0"
             class="px-2 py-1 cursor-pointer hover:bg-light-tertiary border-b last:border-0 border-light-tertiary mx-2">
           {{ item.label | translate }}
         </li>

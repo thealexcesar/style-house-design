@@ -8,13 +8,14 @@ import {LanguageComponent} from '@components/ui/language/language.component';
 @Component({
   selector: 'shd-header',
   standalone: true,
-  imports: [
-    RouterLink,
-    NavbarComponent,
-    EventListenerDirective,
-    TranslatePipe,
-    LanguageComponent
-  ],
+    imports: [
+        RouterLink,
+        NavbarComponent,
+        EventListenerDirective,
+        TranslatePipe,
+        LanguageComponent,
+        LanguageComponent
+    ],
   templateUrl: './header.component.html',
   styles: ``
 })

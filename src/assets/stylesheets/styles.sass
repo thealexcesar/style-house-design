@@ -64,6 +64,9 @@ body
     &:hover
       @apply text-highlight
 
+  &:hover
+    @apply text-highlight
+
 .material-symbols-outlined
   font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24
 
@@ -72,7 +75,6 @@ body
 
 .navbar-link
   @apply flex items-center gap-8 py-2 px-4 bg-light hover:bg-light-tertiary
-
 
 .mat-mdc-menu-content
   border-radius: 2px
@@ -86,4 +88,3 @@ body
 $styleshousedesigns-theme: mat.define-theme((color: (theme-type: light,primary: mat.$azure-palette,tertiary: mat.$blue-palette,),density: (scale: 0,)))
 :root
   @include mat.all-component-themes($styleshousedesigns-theme)
-

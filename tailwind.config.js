@@ -3,13 +3,17 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        'bree-serif': ['"Bree Serif"', 'serif'],
+        'poppins': ['"Poppins"', 'sans-serif']
+      },
       colors: {
-        'accent': '#c8102e',
+        'accent': '#d99510',
         'dark': '#1a1a1a',
         'highlight': '#3737B7',
         'light': '#fff',
         'light-secondary': '#f2f2f7',
-        'light-tertiary': '#7676804d',
+        'light-tertiary': '#ffffffdf',
         'secondary': '#323236',
         'tertiary': '#0000007a',
       },

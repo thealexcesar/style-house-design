@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 import {TranslatePipe} from '@ngx-translate/core';
 import {MatIcon} from '@angular/material/icon';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -17,11 +17,8 @@ import {environment} from '@environments/environment';
   styles: ``
 })
 export class HeroComponent {
-
+  
   phoneNumber = environment.phoneNumber;
-
   protected readonly  faWhatsapp = faWhatsapp;
-  sendMessage() {
-    console.log('hello')
-  }
+  
 }

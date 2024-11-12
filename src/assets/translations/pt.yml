@@ -38,3 +38,11 @@ support:
   terms_of_service: 'Termos de serviço'
   privacy_policy: 'Política de privacidade'
 translate: 'Traduzir'
+
+
+home:
+  title: "Sua Casa Nossa Arte"
+  description: "Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico."
+contact:
+  tell_us: "Fale conosco"
+  terms: "Ao enviar uma mensagem, você concorda com nossos termos de serviço."

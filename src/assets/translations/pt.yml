@@ -55,7 +55,7 @@ services:
       title: 'Design Exclusivo'
     manufacturing:
       description: 'Utilizando materiais de alta qualidade e habilidade artesanal, fabricamos produtos feitos para durar.'
-      title: 'Peças Decorativas e Mobiliário'
+      title: 'Alta Qualidade'
     shipping:
       description: 'Entrega sem complicações e serviços de instalação profissional para garantir que seu produto esteja pronto para uso.'
       title: 'Entrega e Instalação'

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'bree-serif': ['"Bree Serif"', 'serif'],
+        'open-sans': ['"Open Sans"', 'sans-serif'],
         'poppins': ['"Poppins"', 'sans-serif']
       },
       colors: {

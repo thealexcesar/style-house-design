@@ -1,5 +1,5 @@
 @use '@angular/material' as mat
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Pixels&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200')
 @tailwind base
 @tailwind components
@@ -24,7 +24,7 @@
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-$font-sizes: (h1: (base: 1.5rem, scale: 2.5vw),h2: (base: 1.25rem, scale: 2vw),h3: (base: 1rem, scale: 1.5vw),h4: (base: 0.875rem, scale: 1vw))
+$font-sizes: (h1: (base: 1.5rem, scale: 1.5vw),h2: (base: 1rem, scale: 1vw),h3: (base: 0.875rem, scale: 0.75vw),h4: (base: 0.75rem, scale: 0.75vw))
 
 @each $header, $sizes in $font-sizes
   #{$header}
@@ -48,7 +48,9 @@ body
   margin: 0
   padding: 0
   box-sizing: border-box
-  @apply font-poppins font-normal bg-light-secondary transition duration-300 ease-in-out
+  @apply font-open-sans font-normal bg-light-secondary transition duration-300 ease-in-out w-screen m-0 overflow-x-hidden
+
+  h1,
   h2
     @apply font-bree-serif font-normal
 
@@ -63,12 +65,26 @@ body
     &:hover
       @apply text-highlight
 
+  @keyframes underline-animate
+    0%
+      width: 0
+    100%
+      width: 100%
+
+  section
+    h2
+      @apply text-dark my-8 uppercase font-poppins tracking-tighter relative inline-block
+      &::after
+        content: ''
+        height: 2px
+        animation: underline-animate 1s ease-out forwards
+        @apply absolute bottom-0 left-0 w-0 bg-accent
 
 .material-symbols-outlined
   font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24
 
 .container-responsive
-  @apply max-w-screen-xl mx-auto px-4 w-full
+  @apply max-w-screen-xl mx-auto px-4 w-full overflow-x-hidden
 
 .navbar-link
   @apply flex items-center gap-8 py-2 px-4 bg-light hover:bg-light-tertiary
@@ -88,19 +104,23 @@ $styleshousedesigns-theme: mat.define-theme((color: (theme-type: light,primary: 
 
 
 a.whatsapp
-  @apply flex items-center justify-center gap-4 font-poppins text-light bg-green-500 hover:text-light py-3 px-6 rounded-lg hover:bg-green-600 focus:outline-none transition-colors
+  @apply flex items-center justify-center gap-4 font-open-sans text-light bg-green-500 hover:text-light py-3 px-6 rounded-lg hover:bg-green-600 focus:outline-none transition-colors
 
 .card
   cursor: pointer
-  @apply rounded-xl border border-tertiary duration-300 ease-in-out p-4 relative
+  @apply flex flex-col justify-around items-center text-center min-h-48 hover:grayscale focus:grayscale hover:bg-light-tertiary rounded-xl border border-tertiary duration-300 ease-in-out p-4 relative
 
+  & > h3
+    @apply text-lg
   & > i
-    @apply text-accent
+    @apply text-accent text-3xl
+  & > p
+    @apply text-sm
 
   &::after
     content: 'north_east'
     font-family: 'Material Symbols Outlined'
-    font-size: 1.25rem
+    font-size: 1.2rem
     width: 1.5rem
     height: 1.5rem
     display: flex
@@ -110,8 +130,3 @@ a.whatsapp
     border-top-right-radius: 0.75rem
     border-bottom-left-radius: 0.75rem
     transform: translate(25%, -25%)
-
-  &:hover > *:not(p)
-    @apply text-highlight
-
-

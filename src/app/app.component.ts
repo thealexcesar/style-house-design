@@ -17,14 +17,25 @@ import {ServicesComponent} from '@components/home/services/services.component';
   ],
   template: `
     <div class="flex flex-col min-h-screen">
-      <shd-header class="flex items-center" />
+      <shd-header class="flex items-center"/>
       <main class="flex-grow bg-light-secondary">
-        <div class="container-responsive py-12">
-          <shd-hero />
-          <shd-services />
+        <div class="container-responsive py-12 px-1">
+
+          <section id="hero">
+            <shd-hero/>
+          </section>
+
+          <section id="services">
+            <shd-services/>
+          </section>
+
+          <section>
+            <!--TODO: section-->
+          </section>
+
         </div>
       </main>
-      <shd-footer />
+      <shd-footer/>
     </div>
   `
 })

@@ -1,18 +1,14 @@
-<div class="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
+<div class="mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
   <div class="flex flex-col justify-between row-start-2 lg:row-auto gap-8">
-    <h2 class=" text-center md:text-left px-1">
-      {{ 'home.title' | translate }}
-    </h2>
-    <p class="block text-xl font-normal leading-relaxed text-secondary px-1">
-      {{ 'home.description' | translate }}
-    </p>
+    <h1 class=" text-center md:text-left px-1">{{ 'home.title' | translate }}</h1>
+    <p class="block text-xl font-normal leading-relaxed text-secondary px-1">{{ 'home.description' | translate }}</p>
     <div class="grid">
       <a
         href="https://wa.me/{{ phoneNumber }}?text=Oi,Oi,%20estou%20interessado%20nos%20seus%20design%20de%20interiores%20e%20artefatos!"
         target="_blank" class="whatsapp"
       >
         <fa-icon [icon]="faWhatsapp" class="text-2xl"/>
-        <p class="block font-poppins tracking-widest text-sm leading-normal font-medium">{{ 'contact.tell_us' | translate }}</p>
+        <p class="block font-open-sans tracking-widest text-sm leading-normal font-medium">{{ 'contact.tell_us' | translate }}</p>
       </a>
     </div>
   </div>

@@ -4,6 +4,7 @@ import {HeaderComponent} from '@components/ui/header/header.component';
 import {FooterComponent} from '@components/ui/footer/footer.component';
 import {HeroComponent} from '@components/home/hero/hero.component';
 import {ServicesComponent} from '@components/home/services/services.component';
+import {ReasonsComponent} from '@components/home/reasons/reasons.component';
 
 @Component({
   selector: 'shd-root',
@@ -13,7 +14,8 @@ import {ServicesComponent} from '@components/home/services/services.component';
     HeaderComponent,
     FooterComponent,
     HeroComponent,
-    ServicesComponent
+    ServicesComponent,
+    ReasonsComponent
   ],
   template: `
     <div class="flex flex-col min-h-screen">
@@ -26,7 +28,11 @@ import {ServicesComponent} from '@components/home/services/services.component';
           </section>
 
           <section id="services">
-            <shd-services/>
+            <shd-services />
+          </section>
+
+          <section id="reasons">
+            <shd-reasons />
           </section>
 
           <section>

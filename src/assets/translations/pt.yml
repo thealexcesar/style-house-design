@@ -47,6 +47,20 @@ contact:
   tell_us: "Fale conosco"
   terms: "Ao enviar uma mensagem, você concorda com nossos termos de serviço."
 
+reasons:
+  customization:
+    description: 'Adaptado para se encaixar no seu estilo e espaço únicos'
+    title: 'Opções de Personalização'
+  exceptional:
+    description: 'Consultorias personalizadas e entrega sem complicação'
+    title: 'Excepcional'
+  quality:
+    description: 'Habilidade especializada para durabilidade e beleza atemporal'
+    title: 'Artesanato de Qualidade'
+  sustainable:
+    description: 'Materiais e métodos de produção ecológicos'
+    title: 'Prática Sustentável'
+  title: 'Por que nos escolher?'
 services:
   card:
     design:
@@ -59,4 +73,4 @@ services:
     shipping:
       description: 'Entrega sem complicações e serviços de instalação profissional para garantir que seu produto esteja pronto para uso.'
       title: 'Entrega e Instalação'
-  our_differential: 'Nosso Diferencial'
+  title: 'Nosso Diferencial'

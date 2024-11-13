@@ -72,6 +72,7 @@ body
       width: 100%
 
   section
+    @apply mx-auto w-full text-center
     h2
       @apply text-dark my-8 uppercase font-poppins tracking-tighter relative inline-block
       &::after
@@ -106,14 +107,17 @@ $styleshousedesigns-theme: mat.define-theme((color: (theme-type: light,primary: 
 a.whatsapp
   @apply flex items-center justify-center gap-4 font-open-sans text-light bg-green-500 hover:text-light py-3 px-6 rounded-lg hover:bg-green-600 focus:outline-none transition-colors
 
+.accent-icons i
+  @apply text-accent text-3xl
+  &:hover
+    @apply grayscale
+
 .card
   cursor: pointer
   @apply flex flex-col justify-around items-center text-center min-h-48 hover:grayscale focus:grayscale hover:bg-light-tertiary rounded-xl border border-tertiary duration-300 ease-in-out p-4 relative
 
   & > h3
     @apply text-lg
-  & > i
-    @apply text-accent text-3xl
   & > p
     @apply text-sm
 
@@ -130,3 +134,7 @@ a.whatsapp
     border-top-right-radius: 0.75rem
     border-bottom-left-radius: 0.75rem
     transform: translate(25%, -25%)
+
+section#reasons
+  .content
+    @apply flex gap-4 justify-start items-center text-left text-sm bg-tertiary rounded p-2 w-full md:w-7/12

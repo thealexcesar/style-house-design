@@ -46,3 +46,17 @@ home:
 contact:
   tell_us: "Fale conosco"
   terms: "Ao enviar uma mensagem, você concorda com nossos termos de serviço."
+
+services:
+  card:
+    design:
+      description: 'Explore nossa coleção exclusiva, cuidadosamente criadas por nossos designers
+       para trazer autenticidade e beleza incomparável ao seu espaço.'
+      title: 'Design Exclusivo'
+    manufacturing:
+      description: 'Utilizando materiais de alta qualidade e habilidade artesanal, fabricamos produtos feitos para durar.'
+      title: 'Peças Decorativas e Mobiliário'
+    shipping:
+      description: 'Entrega sem complicações e serviços de instalação profissional para garantir que seu produto esteja pronto para uso.'
+      title: 'Entrega e Instalação'
+  our_differential: 'Nosso Diferencial'

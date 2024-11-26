@@ -121,7 +121,7 @@ a.whatsapp
   & > p
     @apply text-sm
 
-  &::after
+  &.service::after
     content: 'north_east'
     font-family: 'Material Symbols Outlined'
     font-size: 1.2rem
@@ -137,4 +137,6 @@ a.whatsapp
 
 section#reasons
   .content
-    @apply flex gap-4 justify-start items-center text-left text-sm bg-tertiary rounded p-2 w-full md:w-7/12
+    @apply flex gap-4 justify-start items-center text-left text-sm text-dark bg-light-tertiary rounded p-2 w-full md:w-7/12
+    i
+      @apply bg-light-secondary text-accent rounded text-4xl

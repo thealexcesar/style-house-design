@@ -47,6 +47,8 @@ contact:
   tell_us: "Fale conosco"
   terms: "Ao enviar uma mensagem, você concorda com nossos termos de serviço."
 
+products:
+  title: 'Nossos Produtos'
 reasons:
   customization:
     description: 'Adaptado para se encaixar no seu estilo e espaço únicos'

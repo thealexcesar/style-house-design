@@ -5,6 +5,7 @@ import {FooterComponent} from '@components/ui/footer/footer.component';
 import {HeroComponent} from '@components/home/hero/hero.component';
 import {ServicesComponent} from '@components/home/services/services.component';
 import {ReasonsComponent} from '@components/home/reasons/reasons.component';
+import {ProductsComponent} from '@components/home/products/products.component';
 
 @Component({
   selector: 'shd-root',
@@ -15,7 +16,8 @@ import {ReasonsComponent} from '@components/home/reasons/reasons.component';
     FooterComponent,
     HeroComponent,
     ServicesComponent,
-    ReasonsComponent
+    ReasonsComponent,
+    ProductsComponent
   ],
   template: `
     <div class="flex flex-col min-h-screen">
@@ -27,16 +29,16 @@ import {ReasonsComponent} from '@components/home/reasons/reasons.component';
             <shd-hero/>
           </section>
 
+          <section id="products">
+            <shd-products />
+          </section>
+
           <section id="services">
             <shd-services />
           </section>
 
           <section id="reasons">
             <shd-reasons />
-          </section>
-
-          <section>
-            <!--TODO: section-->
           </section>
 
         </div>

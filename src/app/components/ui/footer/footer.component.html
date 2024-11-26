@@ -1,5 +1,50 @@
-<footer class=" w-full left-0 z-40 duration-300 overflow-hidden text-light bottom-0 bg-secondary">
-  <div class="container-responsive py-4 h-12 flex justify-between items-center">
-    <p>footer works!</p> <!-- TODO: footer! -->
+<footer class="bg-secondary text-light py-10 mt-10">
+  <div class="container-responsive px-4 tracking-wide">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <h4 class="text-2xl font-semibold mb-4">
+          {{ 'footer.title' | translate }}
+        </h4>
+        <p class="text-sm mb-2">
+          {{ 'footer.description' | translate }}
+        </p>
+        <p class="text-sm">
+          <a href="#" class="text-light">{{ 'footer.about_us' | translate }}</a>
+        </p>
+      </div>
+
+      <div>
+        <h5 class="text-lg font-semibold mb-4">{{ 'footer.products.title' | translate }}</h5>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.products.items.custom_furniture' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.products.items.exclusive_decor' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.products.items.design_pieces' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.products.items.collection_2024' | translate }}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-lg font-semibold mb-4">{{ 'footer.why_choose_us.title' | translate }}</h5>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.why_choose_us.items.customization' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.why_choose_us.items.quality_handcraft' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.why_choose_us.items.sustainable_practice' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.why_choose_us.items.exceptional' | translate }}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-lg font-semibold mb-4">{{ 'footer.contact_us' | translate }}</h5>
+        <a href="mailto:contato@precificar.com" class="text-sm text-light hover:underline" target="_blank">{{ 'footer.message_link' | translate }}</a>
+        <h5 class="text-lg font-semibold mt-6 mb-4">{{ 'footer.connect_with_us' | translate }}</h5>
+        <ul class="flex gap-2">
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.social_links.instagram' | translate }}</a></li>
+          <li><a href="#" class="text-sm text-light hover:underline">{{ 'footer.social_links.facebook' | translate }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-8 border-t border-light-tertiary pt-6">
+    <p class="text-sm text-light-secondary tracking-wider">{{ 'footer.made_with_love' | translate }}</p>
   </div>
 </footer>

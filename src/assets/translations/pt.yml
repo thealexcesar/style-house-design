@@ -17,7 +17,7 @@ messages:
 models:
   product:
     one: 'Produto'
-    plural: 'Procdutos'
+    plural: 'Produtos'
   deal:
     one: 'Oferta'
     plural: 'Ofertas'
@@ -27,28 +27,23 @@ placeholder:
   search: 'Pesquisar'
 price_range: 'Faixa de preço'
 profile: 'Perfil'
-show: 'Mostrar'
+show: 'Exibir'
 sign:
   in: 'Entrar'
   out: 'Sair'
 support:
   title: 'Suporte'
   faqs: 'Perguntas Frequentes'
-  help_and: 'Ajuda e suporte'
-  terms_of_service: 'Termos de serviço'
-  privacy_policy: 'Política de privacidade'
+  help_and: 'Ajuda e Suporte'
+  terms_of_service: 'Termos de Serviço'
+  privacy_policy: 'Política de Privacidade'
 translate: 'Traduzir'
-
-
 home:
-  title: "Sua Casa Nossa Arte"
-  description: "Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico."
+  title: 'Sua Casa, Nossa Arte'
+  description: 'Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico.'
 contact:
-  tell_us: "Fale conosco"
-  terms: "Ao enviar uma mensagem, você concorda com nossos termos de serviço."
-
-products:
-  title: 'Nossos Produtos'
+  tell_us: 'Fale Conosco'
+  terms: 'Ao enviar uma mensagem, você concorda com nossos termos de serviço.'
 reasons:
   customization:
     description: 'Adaptado para se encaixar no seu estilo e espaço únicos'
@@ -66,8 +61,7 @@ reasons:
 services:
   card:
     design:
-      description: 'Explore nossa coleção exclusiva, cuidadosamente criadas por nossos designers
-       para trazer autenticidade e beleza incomparável ao seu espaço.'
+      description: 'Explore nossa coleção exclusiva, cuidadosamente criadas por nossos designers para trazer autenticidade e beleza incomparável ao seu espaço.'
       title: 'Design Exclusivo'
     manufacturing:
       description: 'Utilizando materiais de alta qualidade e habilidade artesanal, fabricamos produtos feitos para durar.'
@@ -76,3 +70,32 @@ services:
       description: 'Entrega sem complicações e serviços de instalação profissional para garantir que seu produto esteja pronto para uso.'
       title: 'Entrega e Instalação'
   title: 'Nosso Diferencial'
+footer:
+  about_us: 'Sobre nós'
+  all_rights_reserved: '© 2024 Todos os direitos reservados.'
+  connect_with_us: 'Conecte-se conosco'
+  contact_us: 'Fale Conosco'
+  description: 'Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico.'
+  made_with_love: 'Feito com carinho por nossa equipe. © 2024 - todos os direitos reservados.'
+  message_link: 'Enviar mensagem'
+  products:
+    items:
+      collection_2024: 'Coleção 2024'
+      custom_furniture: 'Móveis Sob Medida'
+      design_pieces: 'Peças de Design'
+      exclusive_decor: 'Decoração Exclusiva'
+    title: 'Nossos Produtos'
+  social_links:
+    facebook: 'Facebook'
+    instagram: 'Instagram'
+    linkedin: 'LinkedIn'
+    youtube: 'YouTube'
+  terms_of_service: 'Termos de Serviço'
+  title: 'Sua Casa Nossa Arte'
+  why_choose_us:
+    items:
+      customization: 'Opções de Personalização'
+      exceptional: 'Excepcional'
+      quality_handcraft: 'Artesanato de Qualidade'
+      sustainable_practice: 'Prática Sustentável'
+    title: 'Por que nos escolher?'

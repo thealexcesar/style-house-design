@@ -1,5 +1,5 @@
 <header class="fixed top-0 w-full bg-light z-50 h-10">
-  <div class="my-auto h-full container-responsive flex justify-between items-center">
+  <div class="my-auto h-full max-w-screen-xl mx-auto px-4 w-full flex justify-between items-center">
     <a
       [routerLink]="['']"
       (click)="closeMenu()"
@@ -9,6 +9,11 @@
     </a>
 
     <div class="flex items-center gap-4">
+
+      <ul class="hidden md:flex gap-2 mb-2">
+        <li><a href="#" class="text-sm text-dark hover:underline">{{ 'footer.social_links.instagram' | translate }}</a></li>
+        <li><a href="#" class="text-sm text-dark hover:underline">{{ 'footer.social_links.facebook' | translate }}</a></li>
+      </ul>
 
       <shd-language title="{{ 'translate' | translate }}" />
 

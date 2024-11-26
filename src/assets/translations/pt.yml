@@ -5,63 +5,45 @@ actions:
   edit: 'Editar %s'
 all_rights_reserved: 'Todos os direitos reservados'
 connect_with_us: 'Conecte-se conosco'
-contact:
-  tell_us: "Fale conosco"
-  terms: "Ao enviar uma mensagem, você concorda com nossos termos de serviço."
+close: 'Fechar'
 dark: 'Escuro'
-footer:
-  about_us: "Sobre nós"
-  all_rights_reserved: "© 2024 Todos os direitos reservados."
-  connect_with_us: "Conecte-se conosco"
-  contact_us: "Fale Conosco"
-  description: "Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico."
-  made_with_love: "Feito com carinho por nossa equipe. © 2024 - todos os direitos reservados."
-  message_link: "Enviar mensagem"
-  products:
-    items:
-      collection_2024: "Coleção 2024"
-      custom_furniture: "Móveis Sob Medida"
-      design_pieces: "Peças de Design"
-      exclusive_decor: "Decoração Exclusiva"
-    title: "Nossos Produtos"
-  social_links:
-    facebook: "Facebook"
-    instagram: "Instagram"
-    linkedin: "LinkedIn"
-    youtube: "YouTube"
-  terms_of_service: "Termos de Serviço"
-  title: "Sua Casa Nossa Arte"
-  why_choose_us:
-    items:
-      customization: "Opções de Personalização"
-      exceptional: "Excepcional"
-      quality_handcraft: "Artesanato de Qualidade"
-      sustainable_practice: "Prática Sustentável"
-    title: "Por que nos escolher?"
-home:
-  description: "Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico."
-  title: "Sua Casa Nossa Arte"
 languages:
   en: 'Inglês'
   pt: 'Português'
+light: 'Claro'
 messages:
   error: 'Erro ao %s %s.'
   success: '%s %s com sucesso.'
 models:
-  deal:
-    one: 'Oferta'
-    plural: 'Ofertas'
   product:
     one: 'Produto'
     plural: 'Produtos'
+  deal:
+    one: 'Oferta'
+    plural: 'Ofertas'
 more: 'Mais'
 not_found: 'Nenhum %s encontrado'
 placeholder:
   search: 'Pesquisar'
 price_range: 'Faixa de preço'
 profile: 'Perfil'
-products:
-  title: 'Nossos Produtos'
+show: 'Exibir'
+sign:
+  in: 'Entrar'
+  out: 'Sair'
+support:
+  title: 'Suporte'
+  faqs: 'Perguntas Frequentes'
+  help_and: 'Ajuda e Suporte'
+  terms_of_service: 'Termos de Serviço'
+  privacy_policy: 'Política de Privacidade'
+translate: 'Traduzir'
+home:
+  title: 'Sua Casa, Nossa Arte'
+  description: 'Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico.'
+contact:
+  tell_us: 'Fale Conosco'
+  terms: 'Ao enviar uma mensagem, você concorda com nossos termos de serviço.'
 reasons:
   customization:
     description: 'Adaptado para se encaixar no seu estilo e espaço únicos'
@@ -88,14 +70,32 @@ services:
       description: 'Entrega sem complicações e serviços de instalação profissional para garantir que seu produto esteja pronto para uso.'
       title: 'Entrega e Instalação'
   title: 'Nosso Diferencial'
-sign:
-  in: 'Entrar'
-  out: 'Sair'
-support:
-  faqs: 'Perguntas Frequentes'
-  help_and: 'Ajuda e suporte'
-  privacy_policy: 'Política de privacidade'
-  terms_of_service: 'Termos de serviço'
-  title: 'Suporte'
-translate: 'Traduzir'
-light: 'Claro'
+footer:
+  about_us: 'Sobre nós'
+  all_rights_reserved: '© 2024 Todos os direitos reservados.'
+  connect_with_us: 'Conecte-se conosco'
+  contact_us: 'Fale Conosco'
+  description: 'Peças únicas que transformam sua casa em uma galeria de arte, feitas com materiais nobres e design autêntico.'
+  made_with_love: 'Feito com carinho por nossa equipe. © 2024 - todos os direitos reservados.'
+  message_link: 'Enviar mensagem'
+  products:
+    items:
+      collection_2024: 'Coleção 2024'
+      custom_furniture: 'Móveis Sob Medida'
+      design_pieces: 'Peças de Design'
+      exclusive_decor: 'Decoração Exclusiva'
+    title: 'Nossos Produtos'
+  social_links:
+    facebook: 'Facebook'
+    instagram: 'Instagram'
+    linkedin: 'LinkedIn'
+    youtube: 'YouTube'
+  terms_of_service: 'Termos de Serviço'
+  title: 'Sua Casa Nossa Arte'
+  why_choose_us:
+    items:
+      customization: 'Opções de Personalização'
+      exceptional: 'Excepcional'
+      quality_handcraft: 'Artesanato de Qualidade'
+      sustainable_practice: 'Prática Sustentável'
+    title: 'Por que nos escolher?'

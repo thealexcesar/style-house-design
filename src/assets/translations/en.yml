@@ -3,7 +3,7 @@ actions:
   create: 'Create %s'
   delete: 'Delete %s'
   edit: 'Edit %s'
-all_rights_reserved: 'All rights reserved'
+all_rights_reserved: '© 2024 All rights reserved.'
 connect_with_us: 'Connect with us'
 close: 'Close'
 dark: 'Dark'
@@ -12,7 +12,7 @@ languages:
   pt: 'Portuguese'
 light: 'Light'
 messages:
-  error: 'Error %s %s.'
+  error: 'Error while %s %s.'
   success: '%s %s successfully.'
 models:
   product:
@@ -38,16 +38,12 @@ support:
   terms_of_service: 'Terms of Service'
   privacy_policy: 'Privacy Policy'
 translate: 'Translate'
-
-
 home:
-  title: "Your Home, Our Art"
-  description: "Unique pieces that transform your home into an art gallery, crafted with noble materials and authentic design."
-
+  title: 'Your Home, Our Art'
+  description: 'Unique pieces that transform your home into an art gallery, crafted with noble materials and authentic design.'
 contact:
-  tell_us: "Contact Us"
-  terms: "By sending a message, you agree to our terms of service."
-
+  tell_us: 'Contact Us'
+  terms: 'By sending a message, you agree to our terms of service.'
 reasons:
   customization:
     description: 'Tailored to fit your unique style and space'
@@ -61,17 +57,45 @@ reasons:
   sustainable:
     description: 'Eco-friendly materials and production methods'
     title: 'Sustainable Practice'
-  title: "Why Should You Choose Us?"
-
+  title: 'Why Choose Us?'
 services:
   card:
     design:
-      description: "Explore our exclusive collection, carefully crafted by our designers to bring unmatched authenticity and beauty to your space."
-      title: "Exclusive Design"
+      description: 'Explore our exclusive collection, carefully crafted by our designers to bring unmatched authenticity and beauty to your space.'
+      title: 'Exclusive Design'
     manufacturing:
-      description: "Using high-quality materials and artisanal craftsmanship, we create products built to last."
-      title: "High Quality"
+      description: 'Using high-quality materials and artisanal craftsmanship, we create products built to last.'
+      title: 'High Quality'
     shipping:
-      description: "Hassle-free delivery and professional installation services to ensure your product is ready for use."
-      title: "Delivery and Installation"
-  title: "Our Difference"
+      description: 'Hassle-free delivery and professional installation services to ensure your product is ready for use.'
+      title: 'Delivery and Installation'
+  title: 'Our Difference'
+footer:
+  about_us: 'About Us'
+  all_rights_reserved: '© 2024 All rights reserved.'
+  connect_with_us: 'Connect with us'
+  contact_us: 'Contact Us'
+  description: 'Unique pieces that transform your home into an art gallery, crafted with noble materials and authentic design.'
+  made_with_love: 'Made with love by our team. © 2024 - all rights reserved.'
+  message_link: 'Send Message'
+  products:
+    items:
+      collection_2024: '2024 Collection'
+      custom_furniture: 'Custom Furniture'
+      design_pieces: 'Design Pieces'
+      exclusive_decor: 'Exclusive Decor'
+    title: 'Our Products'
+  social_links:
+    facebook: 'Facebook'
+    instagram: 'Instagram'
+    linkedin: 'LinkedIn'
+    youtube: 'YouTube'
+  terms_of_service: 'Terms of Service'
+  title: 'Your Home, Our Art'
+  why_choose_us:
+    items:
+      customization: 'Customization Options'
+      exceptional: 'Exceptional'
+      quality_handcraft: 'Quality Craftsmanship'
+      sustainable_practice: 'Sustainable Practice'
+    title: 'Why Choose Us?'

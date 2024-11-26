@@ -30,6 +30,7 @@
       "@domain/*": ["app/core/domain/*"],
       "@environments/*": ["environments/*"],
       "@icons/*": ["assets/icons/*"],
+      "@interfaces/*": ["app/core/interfaces/*"],
       "@images/*": ["assets/images/*"],
       "@pipes/*": ["app/core/pipes/*"],
       "@shared/*": ["app/shared/*"],

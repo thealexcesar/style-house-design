@@ -114,14 +114,14 @@ a.whatsapp
 
 .card
   cursor: pointer
-  @apply flex flex-col justify-around items-center text-center min-h-48 hover:grayscale focus:grayscale hover:bg-light-tertiary rounded-xl border border-tertiary duration-300 ease-in-out p-4 relative
+  @apply flex flex-col justify-around items-center text-center min-h-48 hover:bg-light-secondary rounded-xl bg-light-tertiary border border-tertiary duration-300 ease-in-out p-4 relative
 
   & > h3
     @apply text-lg
   & > p
     @apply text-sm
 
-  &::after
+  &.service::after
     content: 'north_east'
     font-family: 'Material Symbols Outlined'
     font-size: 1.2rem
@@ -130,11 +130,13 @@ a.whatsapp
     display: flex
     align-items: center
     justify-content: center
-    @apply absolute top-2 right-2 bg-light-tertiary text-dark
+    @apply absolute top-2 right-2 bg-tertiary text-light
     border-top-right-radius: 0.75rem
     border-bottom-left-radius: 0.75rem
     transform: translate(25%, -25%)
 
 section#reasons
   .content
-    @apply flex gap-4 justify-start items-center text-left text-sm bg-tertiary rounded p-2 w-full md:w-7/12
+    @apply flex gap-4 justify-start items-center text-left text-sm text-dark bg-light-tertiary rounded p-2 w-full md:w-7/12
+    i
+      @apply bg-light-secondary text-accent rounded text-4xl

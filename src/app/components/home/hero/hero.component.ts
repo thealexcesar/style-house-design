@@ -17,8 +17,8 @@ import {environment} from '@environments/environment';
   styles: ``
 })
 export class HeroComponent {
-  
+
   phoneNumber = environment.phoneNumber;
   protected readonly  faWhatsapp = faWhatsapp;
-  
+
 }

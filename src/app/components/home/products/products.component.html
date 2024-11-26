@@ -2,10 +2,13 @@
 <div class="flex w-full min-h-[60vh] mx-auto bg-light-tertiary gap-4">
   <div
     *ngFor="let product of products; let i = index"
+    shdEventListener
     class="group panel h-[80vh] rounded-lg bg-cover bg-center cursor-pointer transition-all duration-700 ease-in-out relative"
     [ngClass]="{'flex-[5]': i === selectedIndex, 'flex-[0.5]': i !== selectedIndex}"
     [ngStyle]="{ 'background-image': 'url(' + product.image_url + ')' }"
     (click)="selectedIndex = i"
+    (keyup)="selectedIndex = i"
+    tabindex="0"
   >
     <div
       class="absolute bottom-4 left-4 text-dark bg-light-tertiary py-1 px-2 rounded text-xl"

@@ -3,6 +3,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 import {ProductsService} from '@services/products.service';
 import {NgClass, NgForOf, NgStyle} from '@angular/common';
 import {Product} from '@interfaces/Product';
+import {EventListenerDirective} from '@directives/event-listener.directive';
 
 @Component({
   selector: 'shd-products',
@@ -11,7 +12,8 @@ import {Product} from '@interfaces/Product';
     TranslatePipe,
     NgForOf,
     NgStyle,
-    NgClass
+    NgClass,
+    EventListenerDirective
   ],
   templateUrl: './products.component.html',
   styles: ``
